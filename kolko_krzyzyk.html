@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="utf-8"/>
+    <title>Kółko i Krzyżyk</title>
+
+    <style>
+        body
+        {
+            background-color: khaki;
+        }
+
+        #tytul
+        {
+            width:400px;
+            margin-left: auto;
+            margin-right: auto;
+
+            text-align: center;
+            font-size: 50px;
+            color:magenta;
+            height: 80px;
+        }
+
+        #gra
+        {
+            width:320px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .pole
+        {
+          width:100px;
+          height: 100px;
+          border:medium solid magenta;
+          float:left;
+          cursor:pointer;
+          text-align: center;
+          font-size: 90px;
+        }   
+
+        .pole:hover
+        {
+            border:medium solid darkmagenta;
+            background: darkkhaki;
+        }
+
+        .przycisk
+        {
+            
+          height: 30px;
+          border:0px solid ;
+          border-radius: 8px;
+          background: magenta;
+          color:khaki;
+          font-size:15px;
+          cursor:pointer;
+        }
+        .przycisk:hover
+        {
+          background:darkmagenta;
+          color:darkkhaki;
+        }
+
+        #pojemnik
+        {
+            width: 400px;
+            height: 110px;
+            margin-left:auto;
+            margin-right: auto;
+            text-align: center;
+        }
+        #akcja
+        {
+            width: 400px;
+            font-size: 30px;
+            height: 50px;
+            display: flex;
+        }
+
+        #akcja0
+        {
+            margin-left:auto;
+        }
+        #akcja1
+        {
+            margin-right: auto;
+        }
+
+    </style>
+    
+    <script src="kolko_krzyzyk.js"></script>
+    
+</head>
+
+<body onload="start1()">
+
+    <button class="przycisk" onclick="location.href='index.html'">Powrót !!!</button>
+    <div id="tytul">Kółko i Krzyżyk</div>
+    <div id="pojemnik">
+        <div id="akcja">
+            <div id="akcja0">Wstaw:&nbsp</div>
+            <div id="akcja1"></div>
+        </div>
+        <div id="po_grze"></div>
+    </div>
+    <div id="gra"></div>
+    
+
+</body>
+
+</html>
